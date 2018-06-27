@@ -100,12 +100,11 @@ $ npm run deploy
 ```
 
 Let's enjoy!!!
-<<<<<<< HEAD
+
 
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/F9Uf/nuxt-firebase-ssr-auth.git
 git push -u origin master
-=======
->>>>>>> 8acbe69e0cd73ecd7d12b019e83aa61b8233826c
+
