@@ -1,33 +1,20 @@
 # nuxt-firebase-pwa
 
-[Nuxt.js](https://nuxtjs.org) * [Firebase](https://firebase.google.com) = SPA * SSR * PWA * Serverless
+[Nuxt.js](https://nuxtjs.org)  *  [Firebase](https://firebase.google.com)
 
 
-## 👻Description
+## Description
 
 Run the Nuxt.js application on Firebase.
 
-### Features
-
-* SPA (Single Page Application)
-* SSR (Sever Side Rendering)
-* PWA (Progressive Web Apps)
-* Serverless (Cloud Functions for Firebase + Firebase Hosting)
-
-### Libraries
-
-* [Node.js](https://github.com/nodejs/node) v6.14.0
-* [Nuxt.js](https://github.com/nuxt/nuxt.js) v1.0.0-rc11
-
-
-## 👶Start
+## Start
 
 ### Install dependencies
 
 ``` bash
 $ npm install # Or yarn install
-$ cd /path/to/nuxt-firebase-pwa/src && npm install
-$ cd /path/to/nuxt-firebase-pwa/functions && npm install
+$ cd /nuxt-firebase-pwa/src && npm install
+$ cd /nuxt-firebase-pwa/functions && npm install
 ```
 
 ### Launch development server
@@ -40,7 +27,7 @@ $ npm run dev
 Open [http://localhost:3000]()
 
 
-## 🚀Build and Deploy to Firebase
+## Build and Deploy to Firebase
 
 ### Build
 
@@ -56,6 +43,9 @@ Copy assets and static files.
 ```bash
 $ cd /path/to/nuxt-firebase-pwa
 $ npm run setup
+
+set up => copy items in 'functions/nuxt/dist/' to 'public/assets'
+      and copy items in 'src/static/*' to 'public/'
 ```
 
 ### Firebase Project Setup
@@ -66,7 +56,6 @@ Install Firebase CLI.
 
 ```bash
 $ npm install -g firebase-tools
-$ exec $SHELL -l
 ```
 
 Login to Firebase.
@@ -93,18 +82,19 @@ $ npm run serve
 
 Open [http://localhost:5000]()
 
-### Deploy🎉
+### Deploy
 
 ```bash
 $ npm run deploy
 ```
 
-Let's enjoy!!!
 
+### Git Command
 
+```bash
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/F9Uf/nuxt-firebase-ssr-auth.git
 git push -u origin master
-
+```
