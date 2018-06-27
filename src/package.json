@@ -13,6 +13,7 @@
   "dependencies": {
     "ajv": "^6.0.0",
     "babel-plugin-module-resolver": "^2.7.1",
+<<<<<<< HEAD
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-stage-0": "^6.24.1",
     "cookie-parser": "^1.4.3",
@@ -22,6 +23,13 @@
     "vue": "2.4.4",
     "vuex": "^3.0.1",
     "xmlhttprequest": "^1.8.0"
+=======
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "nuxt": "1.0.0-rc11",
+    "vue": "2.4.4",
+    "vuex": "^3.0.1"
+>>>>>>> 8acbe69e0cd73ecd7d12b019e83aa61b8233826c
   },
   "devDependencies": {
     "@nuxtjs/pwa": "^2.0.8",
