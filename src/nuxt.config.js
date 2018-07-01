@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -50,7 +52,15 @@ module.exports = {
       }
     },
     vendor: [
-      '@/plugins/firebase-client-init.js'
+      '@/plugins/firebase-client-init.js',
+      'jquery','bootstrap','popper.js'
+    ],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      })
     ]
   },
   modules: [
@@ -60,6 +70,7 @@ module.exports = {
     name: 'CALUMOZ',
     lang: 'en'
   },
+  css: ['bootstrap/dist/css/bootstrap.css'],
   plugins: [
     {src: '@/plugins/firebase-client-init.js' , ssr: false},
     {src: '@/plugins/auth-cookie.js', ssr: false}
